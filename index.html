@@ -2,31 +2,60 @@
 <html>
   <head>
     <title>Dan Stineback Portfolio</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <main>
-      <header>
+    <header class="site-header">
         <h1>Dan Stineback Professinal Portfolio</h1>
-      </header>
-      <nav>
+          <p>Look into the skills of a coding Nija</p>
+    </header>
+      <nav class="main-nav">
         <ul>
-          <li>Projects</li>
-          <li>About Me...under construction</li>
-          <li><a href="https://www.facebook.com/dstineback" target="_blank">Facebook</a></li>
-          <li><a href="https://twitter.com/dstineback" target="_blank">Twitter</a></li>
-          <li><a href="https://www.instagram.com/dstineback/" target="_blank">Instagram</a></li>
-          <li><a href="https://github.com/dstineback" target="_blank">GitHuB</a></li>
-          <li><a href="https://www.linkedin.com/in/dannystineback" target="_blank">Linkedin</a></li>
+          <li class="tab">Projects</li>
+          <li class="tab">About Me...under construction</li>
+          <li class="icon"><a href="https://www.facebook.com/dstineback" target="_blank">Facebook</a></li>
+          <li class="icon"><a href="https://twitter.com/dstineback" target="_blank">Twitter</a></li>
+          <li class="icon"><a href="https://www.instagram.com/dstineback/" target="_blank">Instagram</a></li>
+          <li class="icon"><a href="https://github.com/dstineback" target="_blank">GitHuB</a></li>
+          <li class="icon"><a href="https://www.linkedin.com/in/dannystineback" target="_blank">Linkedin</a></li>
         </ul>
       </nav>
-      <section id="project-container">
-        <article class="project-location" data-catagory="cat">
+  <main>
+    <section id="article" class="tab-content">
+      <div>
+        <ul id="filters">
+          <li>
+            <select id="rating-filter">
+              <option value="">-- Filter by rating --</option>
+            </select>
+          </li>
+        </ul>
+      </div>
+      <article class="template template" data-catagory="cat">
           <header>
-            <h1>Project Name</h1>
+            <h1>Title</h1>
+            <div class="byline">
+              <!-- By <address><a href="">Author Name</a></address>
+              published <time pubdate datetime="2000-01-01">Publish Time</time> -->
+            </div>
           </header>
-          <section class="project-body"></section>
+          <section class="article-body"></section>
+          <a href="#" class="read-on">Read on &rarr;</a>
         </article>
       </section>
+      <section id="about" class="tab-content">
+        <header>Enjoy my page!</header>
+          <section>
+            <h1>Some of my Intrest:</h1>
+              <ul>
+                <li>Watching Soccer! Well and pretty much all sports</li>
+                <li>Hacking the world</li>
+                <li>Spending time outdoors</li>
+                <li>Famliy Time is a must.</li>
+              </ul>
+          </section>
+        </section>
     </main>
     <footer>&copy; 2016 Dan Stineback</footer>
   <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>

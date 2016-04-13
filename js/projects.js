@@ -10,14 +10,23 @@ function Project(opts){
 }
 
 Project.prototype.toHtml = function(){
-  var $newProject = $('article.project-location').clone();
+  var $newProject = $('article.template').clone();
+  $newArticle.removeClass('template');
+  if (!this.date) {
+    $newArticle.addClass('draft');
+  }
 
   $newProject.attr('data-category', this.category);
-  $newProject.find('h1').html(this.title);
-  $newProject.find('address').html('<a href="' + this.projectURL + '">' + this.developer + '</a>');
-  $newProject.find('.project-body').html(this.body);
+  $newArticle.attr('data-developer', this.developer);
+
+  $newArticle.find('.byline a').html(this.author);
+  $newProject.find('.byline a').attr('href', this.projectURL);
+  $newProject.find('h1:first').html(this.title);
+  $newProject.find('.article-body').html(this.body);
+  $newProject.find('time[pubdate]').attr('datetime', this.date);
+  $newProject.find('time[pubdate]').attr('title', this.date);
+  $newProject.find('time').html('about ' + parseInt((new Date() - new Date(this.date))/60/60/24/1000) + ' days ago');
   $newProject.append('<hr>');
-  $newProject.removeClass('project-location');
   return $newProject;
 };
 
@@ -30,5 +39,5 @@ projectData.forEach(function(ele) {
 });
 
 projects.forEach(function(a){
-  $('#project-container').append(a.toHtml());
+  $('#articles').append(a.toHtml());
 });
