@@ -1,4 +1,4 @@
-
+console.log('projectView works');
 var projectView = {};
 
 projectView.populateFilters = function() {
@@ -6,7 +6,7 @@ projectView.populateFilters = function() {
     if (!$(this).hasClass('template')) {
       var val = $(this).find('address a').text();
       var optionTag = '<option value="' + val + '">' + val + '</option>';
-      $('#author-filter').append(optionTag);
+      $('#rating-filter').append(optionTag);
 
       val = $(this).attr('data-category');
       optionTag = '<option value="' + val + '">' + val + '</option>';
@@ -18,11 +18,11 @@ projectView.populateFilters = function() {
 };
 
 projectView.handleAuthorFilter = function() {
-  $('#author-filter').on('change', function() {
+  $('#rating-filter').on('change', function() {
     if ($(this).val()) {
 
       $('article').hide();
-      $('article').filter('article[data-author="' + $(this).val() + '"]').fadeIn(300);
+      $('article').filter('article[data-developer="' + $(this).val() + '"]').fadeIn(300);
 
     } else {
 
@@ -43,7 +43,7 @@ projectView.handleCategoryFilter = function() {
       $('article').fadeIn(300);
       $('.template').hide();
     }
-    $('#author-filter').val('');
+    $('#rating-filter').val('');
   });
 };
 

@@ -1,4 +1,4 @@
-console.log('it works');
+console.log('projects works');
 var projects = [];
 
 function Project(opts){
@@ -11,6 +11,7 @@ function Project(opts){
 }
 
 Project.prototype.toHtml = function(){
+  console.log('project proto starts');
   var $newProject = $('article.template').clone();
   $newProject.removeClass('template');
   if (!this.date) {
@@ -20,7 +21,7 @@ Project.prototype.toHtml = function(){
   $newProject.attr('data-category', this.category);
   $newProject.attr('data-developer', this.developer);
 
-  $newProject.find('.byline a').html(this.author);
+  $newProject.find('.byline a').html(this.developer);
   $newProject.find('.byline a').attr('href', this.projectURL);
   $newProject.find('h1:first').html(this.title);
   $newProject.find('.article-body').html(this.body);
@@ -28,7 +29,9 @@ Project.prototype.toHtml = function(){
   $newProject.find('time[pubdate]').attr('title', this.date);
   $newProject.find('time').html('about ' + parseInt((new Date() - new Date(this.date))/60/60/24/1000) + ' days ago');
   $newProject.append('<hr>');
+  console.log('project proto stops');
   return $newProject;
+
 };
 
 projectData.sort(function(a,b) {

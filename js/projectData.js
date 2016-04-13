@@ -1,3 +1,4 @@
+console.log('projectData works');
 var projectData = [
   {
     title: 'Budget Buddy',
