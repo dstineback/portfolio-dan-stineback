@@ -7,6 +7,7 @@ function Project(opts){
   this.date = opts.date;
   this.projectURL = opts.projectURL;
   this.projectDescription = opts.projectDescription;
+  this.category = opts.category;
 }
 
 Project.prototype.toHtml = function(){

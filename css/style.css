@@ -1,11 +1,19 @@
+body{
+  background-color: #A9BBF2;
+}
 header {
   background-color: #24F2DA;
 }
-
+nav {
+  display: inline-block;
+}
 li {
   text-decoration: none;
 }
-a
+a, a:link, a:active {
+  color: #F2EFEB;
+  text-decoration: none;
+}
 .site-header {
   background-color: #1EA9F2;
 }
