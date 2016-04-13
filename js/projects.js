@@ -13,7 +13,7 @@ function Project(opts){
 Project.prototype.toHtml = function(){
   console.log('project proto starts');
   var $newProject = $('article.template').clone();
-  $newProject.removeClass('template');
+  // $newProject.removeClass('template');
   if (!this.date) {
     $newProject.addClass('draft');
   }
@@ -43,5 +43,5 @@ projectData.forEach(function(ele) {
 });
 
 projects.forEach(function(a){
-  $('#articles').append(a.toHtml());
+  $('#section-one').append(a.toHtml());
 });
