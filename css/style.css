@@ -5,3 +5,13 @@ header {
 li {
   text-decoration: none;
 }
+a
+.site-header {
+  background-color: #1EA9F2;
+}
+.main-nav {
+  list-style: none;
+}
+.main-nav li{
+  list-style: none;
+}

@@ -11,15 +11,15 @@ function Project(opts){
 
 Project.prototype.toHtml = function(){
   var $newProject = $('article.template').clone();
-  $newArticle.removeClass('template');
+  $newProject.removeClass('template');
   if (!this.date) {
-    $newArticle.addClass('draft');
+    $newProject.addClass('draft');
   }
 
   $newProject.attr('data-category', this.category);
-  $newArticle.attr('data-developer', this.developer);
+  $newProject.attr('data-developer', this.developer);
 
-  $newArticle.find('.byline a').html(this.author);
+  $newProject.find('.byline a').html(this.author);
   $newProject.find('.byline a').attr('href', this.projectURL);
   $newProject.find('h1:first').html(this.title);
   $newProject.find('.article-body').html(this.body);
