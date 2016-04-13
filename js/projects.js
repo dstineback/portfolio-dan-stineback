@@ -2,7 +2,7 @@ console.log('it works');
 var projects = [];
 
 function Project(opts){
-  this.title = opts.ttile;
+  this.title = opts.title;
   this.developer = opts.developer;
   this.date = opts.date;
   this.projectURL = opts.projectURL;
@@ -10,7 +10,7 @@ function Project(opts){
 }
 
 Project.prototype.toHtml = function(){
-  var $newProject = $('projects.project-location').clone();
+  var $newProject = $('article.project-location').clone();
 
   $newProject.attr('data-category', this.category);
   $newProject.find('h1').html(this.title);
