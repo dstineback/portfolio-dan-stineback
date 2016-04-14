@@ -2,10 +2,10 @@ body{
   background-color: #A9BBF2;
 }
 header {
-  background-color: #24F2DA;
+  background-color: #877A64;
 }
 nav {
-  display: inline-block;
+  display: block;
 }
 li {
   text-decoration: none;
@@ -14,12 +14,15 @@ a, a:link, a:active {
   color: #F2EFEB;
   text-decoration: none;
 }
-.site-header {
-  background-color: #1EA9F2;
-}
+
 .main-nav {
   list-style: none;
+
+}
+.main-nav ul {
+  display: block;
 }
 .main-nav li{
   list-style: none;
+  border: none;
 }

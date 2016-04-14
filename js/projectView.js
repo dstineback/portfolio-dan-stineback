@@ -49,27 +49,27 @@ projectView.handleCategoryFilter = function() {
 
 projectView.handleMainNav = function() {
   $('.main-nav').on('click', '.tab', function() {
-    $('.tab-content').hide();
+    // $('.tab-content').hide();
     $('#' + ($(this).data('content'))).fadeIn(300);
   });
 
   $('.main-nav .tab:first').click();
 };
 
-projectView.setTeasers = function() {
-  $('.article-body *:nth-of-type(n+2)').hide();
-  $('article').on('click', 'a', function() {
-    event.preventDefault();
-    console.log(this);
-    $('.article-body *:nth-of-type(n+2)').fadeIn(300);
-  });
-};
+// projectView.setTeasers = function() {
+//   $('.article-body *:nth-of-type(n+2)').hide();
+//   $('article').on('click', 'a', function() {
+//     event.preventDefault();
+//     console.log(this);
+//     $('.article-body *:nth-of-type(n+2)').fadeIn(300);
+//   });
+// };
 
 $(document).ready(function() {
   projectView.populateFilters();
   projectView.handleAuthorFilter();
   projectView.handleCategoryFilter();
   projectView.handleMainNav();
-  projectView.setTeasers();
+  // projectView.setTeasers();
 });
 $();
