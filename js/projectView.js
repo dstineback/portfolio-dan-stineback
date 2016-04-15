@@ -22,12 +22,12 @@ projectView.handleRatingFilter = function() {
     if ($(this).val()) {
 
       $('article').hide();
-      $('article').filter('article[data-developer="' + $(this).val() + '"]').fadeIn(300);
+      $('article').filter('article[data-category="' + $(this).val() + '"]').fadeIn(300);
 
     } else {
 
-      $('article').fadeIn(300);
-      $('.template').hide();
+      $('section').fadeIn(300);
+      $('#port').hide();
     }
     $('#category-filter').val('');
   });
@@ -37,24 +37,24 @@ projectView.handleTitleFilter = function() {
   $('#category-filter').on('change', function() {
     if ($(this).val()) {
       $('article').hide();
-      $('article').filter('article[data-category="' + $(this).val() + '"]').fadeIn(300);
+      $('article').filter('article[data-title="' + $(this).val() + '"]').fadeIn(300);
 
     } else {
-      $('article').fadeIn(300);
-      $('.template').hide();
+      $('section').fadeIn(300);
+      $('#about').hide();
     }
     $('#rating-filter').val('');
   });
 };
 
-// projectView.handleMainNav = function() {
-//   $('.main-nav').on('click', '.tab', function() {
-//     // $('.tab-content').hide();
-//     $('#' + ($(this).data('content'))).fadeIn(300);
-//   });
-//
-//   $('.main-nav .tab:first').click();
-// };
+projectView.handleMainNav = function() {
+  $('.main-nav').on('click', '.tab', function() {
+    $('.tab-content').hide();
+    $('#' + ($(this).data('content'))).fadeIn(300);
+  });
+
+  $('.main-nav .tab:first').click();
+};
 
 
 
