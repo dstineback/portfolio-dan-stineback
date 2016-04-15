@@ -49,7 +49,7 @@ projectView.handleTitleFilter = function() {
 
 projectView.handleMainNav = function() {
   $('.main-nav').on('click', '.tab', function() {
-    $('.tab-content').hide();
+    // $('.tab-content').hide();
     $('#' + ($(this).data('content'))).fadeIn(300);
   });
 
