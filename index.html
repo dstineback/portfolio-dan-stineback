@@ -3,7 +3,6 @@
   <head>
     <title>Dan Stineback Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/icons.css">
     <link rel="stylesheet" href="css/style.css">
@@ -18,7 +17,7 @@
             {{date}}
           </div>
         </header>
-        <section class="article-body">{{{projectDescription}}}</section>
+        <section class="article-body">{{{body}}}</section>
         <!-- <a href="#" class="read-on">Read on &rarr;</a> -->
       </article>
     </script>
@@ -34,8 +33,8 @@
       <nav class="main-nav">
         <!-- <div class ="icon-menu"></div> -->
         <ul>
-          <li class="tab icon-home" data-content="section-one"><a href="#">Projects</a></li>
-          <li class="tab icon-happy" data-content="about"><a href="#">About Me</a></li>
+          <li class="tab" data-content="projects"><a href="#">Projects</a></li>
+          <li class="tab" data-content="about"><a href="#">About Me</a></li>
           <li class="icon-facebook2"><a href="https://www.facebook.com/dstineback" target="_blank">Facebook</a></li>
           <li class="icon-twitter"><a href="https://twitter.com/dstineback" target="_blank">Twitter</a></li>
           <li class="icon-instagram"><a href="https://www.instagram.com/dstineback/" target="_blank">Instagram</a></li>
@@ -45,7 +44,7 @@
       </nav>
     </header>
   <main>
-    <section id="section-one" class="tab-content">
+    <section id="projects" class="tab-content">
       <div>
         <ul id="filters">
           <li>
@@ -60,7 +59,6 @@
           </li>
         </ul>
       </div>
-
       </section>
       <section id="port" class="tab-content">
       </section>

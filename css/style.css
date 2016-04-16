@@ -3,6 +3,11 @@ body{
 }
 header {
   background-color: #877A64;
+  text-align: center;
+}
+footer {
+  display: fixed
+  bottom:auto;
 }
 nav {
   display: block;
