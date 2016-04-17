@@ -60,7 +60,7 @@ projectView.handleMainNav = function() {
     $('#' + $(this).data('content')).fadeIn(300);
   });
 
-  $('.main-nav .tab:first').click();
+  $('.main-nav .tab:nth-of-type(2)').click();
 };
 
 
