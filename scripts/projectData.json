@@ -1,5 +1,3 @@
-console.log('projectData works');
-
 [{
     "title": "Budget Buddy",
     "developer": "Dan Stineback",
