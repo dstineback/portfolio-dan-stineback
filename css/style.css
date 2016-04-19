@@ -12,6 +12,10 @@ footer {
 nav {
   display: block;
 }
+ul {
+  list-style: none;
+  display: inline-block;
+}
 li {
   text-decoration: none;
 }
