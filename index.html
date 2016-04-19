@@ -30,42 +30,43 @@
         <h1>Dan Stineback Professinal Portfolio</h1>
           <p>Look into the skills of a coding Nija</p>
       </section>
-
-      <nav class="main-nav">
-        <!-- <div class ="icon-menu"></div> -->
+      <div id="social-icon container">
         <ul>
-          <li class="tab" data-content="projects"><a href="#">Projects</a></li>
-          <li class="tab" data-content="about"><a href="#">About Me</a></li>
           <li class="icon-facebook2"><a href="https://www.facebook.com/dstineback" target="_blank">Facebook</a></li>
           <li class="icon-twitter"><a href="https://twitter.com/dstineback" target="_blank">Twitter</a></li>
           <li class="icon-instagram"><a href="https://www.instagram.com/dstineback/" target="_blank">Instagram</a></li>
           <li class="icon-github"><a href="https://github.com/dstineback" target="_blank">GitHuB</a></li>
           <li class="icon-linkedin"><a href="https://www.linkedin.com/in/dannystineback" target="_blank">Linkedin</a></li>
         </ul>
+      </div>
+      <nav class="main-nav">
+        <!-- <div class ="icon-menu"></div> -->
+        <ul>
+          <li class="tab" data-content="projects"><a href="#">Projects</a></li>
+          <li class="tab" data-content="about"><a href="#">About Me</a></li>
+        </ul>
+        <div>
+          <ul id="filters">
+            <li>
+              <select id="rating-filter">
+                <option value="">-- Filter by title --</option>
+              </select>
+            </li>
+            <li>
+              <select id="category-filter">
+                <option value=""> Filter by rating</option>
+              </select>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
     <div class="clearfix"></div>
   <main>
-
-      <div>
-        <ul id="filters">
-          <li>
-            <select id="rating-filter">
-              <option value="">-- Filter by title --</option>
-            </select>
-          </li>
-          <li>
-            <select id="category-filter">
-              <option value=""> Filter by rating</option>
-            </select>
-          </li>
-        </ul>
-      </div>
-
-      <div class="clearfix"></div
       <section id="projects" class="tab-content"></section>
       <section id="about" class="tab-content">
         <header>Enjoy my page!</header>
+        <article>
           <section>
             <h1>Some of my Intrest:</h1>
               <ul>
@@ -75,16 +76,23 @@
                 <li>Famliy Time is a must.</li>
               </ul>
           </section>
+          <section id='bio'>
+            <h2>Bio</h2>
+            <p>Hello there, thank you for checking out my work space. My name is Dan Stineback and I'm a web developer....well aspiring web developer. Web development wasn't always on my radar but has always been something that I loved doing. So I decided to take the leap and become a full time developer. This site is a work in progress but in the coming months will be launched live and out into the world. Until then I hope you enjoy it.</p>
+            </section>
         </section>
+      </article>
     </main>
     <div class="clearfix"></div>
-    <footer>&copy; 2016 Dan Stineback</footer>
+  <footer>&copy; 2016 Dan Stineback</footer>
   <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
   <script src="scripts/projectData.json" type="text/json"></script>
   <script src="js/projects.js" type="text/javascript"></script>
   <script src="js/projectView.js" type="text/javascript"></script>
   <script src="scripts/tempelates.js" type="text/javascript"></script>
-  <!-- <script type="text/javascript"></script> need to add Ajax call here-->
+  <script type="text/javascript">
+  Projcet.fetchAll();
+  </script> need to add Ajax call here
   </body>
 </html>
