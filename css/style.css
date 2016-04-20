@@ -14,7 +14,8 @@ nav {
 }
 ul {
   list-style: none;
-  display: inline-block;
+  /*float: right;;
+  display: block;*/
 }
 li {
   text-decoration: none;
