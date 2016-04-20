@@ -24,7 +24,9 @@ a, a:link, a:active {
   color: #F2EFEB;
   text-decoration: none;
 }
-
+.social {
+  display: inline-block;
+}
 .main-nav {
   list-style: none;
 
