@@ -1,3 +1,4 @@
+(function(module){
 console.log('projectView works');
 var projectView = {};
 
@@ -69,3 +70,5 @@ $(document).ready(function() {
   projectView.handleRatingFilter();
   projectView.handleTitleFilter();
 });
+module.Project = Project;
+})(window);

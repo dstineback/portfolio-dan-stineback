@@ -1,3 +1,6 @@
+
+(function(module){
+
 function Project(opts){
   for (key in opts) this[key] = opts[key];
 };
@@ -40,3 +43,6 @@ Project.fetchAll = function(){
     }
   });
 };
+
+module.Project = Project;
+})(window);

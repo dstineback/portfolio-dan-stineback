@@ -1,3 +1,4 @@
+(function(module){
 // console.log('projects works');
 // var projects = [];
 //
@@ -26,3 +27,5 @@
 // projects.forEach(function(a){
 //   $('#port').append(a.toHtml());
 // });
+  module.Project = Project;
+})(window);
