@@ -71,6 +71,6 @@
     projectView.handleTitleFilter();
   });
 
-  module.Project = Project;
+  
   module.projectView = projectView;
 })(window);

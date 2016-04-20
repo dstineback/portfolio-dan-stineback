@@ -20,9 +20,9 @@
     return template(this);
   };
 
-  projectData.forEach(function(ele) {
-    projects.push(new Project(ele));
-  });
+  // projectData.forEach(function(ele) {
+  //   projects.push(new Project(ele));
+  // });
 
   projects.forEach(function(a){
     $('#port').append(a.toHtml());
