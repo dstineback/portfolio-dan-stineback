@@ -44,7 +44,7 @@
       }
     });
   };
-
+//this code below was for the class portfolio project but will be removed later on//
   Project.numWordsAll = function() {
 
     return Project.all.map(function(projects) {
@@ -87,6 +87,7 @@
       };
     });
   };
+  //end of class code project//
 
   module.Project = Project;
 })(window);

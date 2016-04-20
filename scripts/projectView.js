@@ -6,7 +6,7 @@
     $('nav').on('click', '.tab', function(e) {
       $('.tab-content').hide();
       var $selectedTab = $(this).attr('data-content');
-      $('#' + $selectedTab).fadeIn(300);
+      $('#' + $selectedTab).fadeIn(500);
     });
 
     $('nav .tab:nth-of-type(2)').click();
@@ -71,6 +71,6 @@
     projectView.handleTitleFilter();
   });
 
-  
+
   module.projectView = projectView;
 })(window);
