@@ -44,50 +44,7 @@
       }
     });
   };
-//this code below was for the class portfolio project but will be removed later on//
-  Project.numWordsAll = function() {
 
-    return Project.all.map(function(projects) {
-      return projects.body.match(/\b\w+/g).length;
-    })
-    .reduce(function(a, b) {
-      return (a + b);
-    });
-  };
-
-
-  Project.allAuthors = function() {
-    return Project.all.map(function(projects){
-
-      return projects.developer;
-    }).reduce(function(a,b){
-      if(a.indexOf(b) === -1){
-        a.push(b);
-        return a;
-      } else {
-        return a;
-      }
-    },[]);
-
-  };
-
-  Project.numWordsByAuthor = function() {
-    return Project.alldevelopers().map(function(developer) {
-      return {
-        name: developer,
-        numWords: Project.all.filter(function(curProject) {
-          return curProject.developer === developer;
-        })
-        .map(function(curProject){
-          return curProject.body.split(' ').length;
-        })
-          .reduce(function(acc, cur) {
-            return acc + cur;
-          })
-      };
-    });
-  };
-  //end of class code project//
 
   module.Project = Project;
 })(window);

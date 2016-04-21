@@ -1,5 +1,5 @@
 (function(module){
-  console.log('projects works');
+  
   var projects = [];
 
   function Project (opts) {
