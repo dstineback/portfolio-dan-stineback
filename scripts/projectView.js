@@ -28,7 +28,7 @@
 
 
   projectView.handleRatingFilter = function() {
-    $('#rating-filter').on('change', function() {
+    $('#title-filter').on('change', function() {
       if ($(this).val()) {
         $('article').hide();
         $('article[data-category="' + $(this).val() + '"]').fadeIn(500);

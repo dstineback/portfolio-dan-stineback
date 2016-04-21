@@ -5,7 +5,7 @@
 }
 .heading-group-h1 {
   float: left;
-  
+
 }
 .icon-menu {
   position: absolute;
@@ -46,6 +46,10 @@
 }
 
 @media only screen and (min-width: 640px) {
+  div img {
+
+    max-width: 100%
+  }
   .heading-group-h1 {
     padding: .1em .1em .1em 2em;
     float: none;
