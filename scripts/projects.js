@@ -1,5 +1,5 @@
 (function(module){
-  
+
   var projects = [];
 
   function Project (opts) {
@@ -19,11 +19,6 @@
     var template = Handlebars.compile($source);
     return template(this);
   };
-
-  // projectData.forEach(function(ele) {
-  //   projects.push(new Project(ele));
-  // });
-
   projects.forEach(function(a){
     $('#port').append(a.toHtml());
   });

@@ -1,9 +1,5 @@
 (function(module){
 
-  function Project(opts){
-    for (key in opts) this[key] = opts[key];
-  };
-
   Project.prototype.toMyPortfolio = function(){
     var template = Handlebars.compile($('#projects-template').html());
     this.daysAgo = parseInt((new Date() - new Date(this.date)) / 60 / 60 / 24 / 1000);
