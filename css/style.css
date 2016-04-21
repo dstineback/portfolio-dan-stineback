@@ -26,6 +26,8 @@ a, a:link, a:active {
 }
 .social {
   display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .main-nav {
   list-style: none;

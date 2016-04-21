@@ -2,9 +2,10 @@
     "title": "Budget Buddy",
     "developer": "Dan Stineback",
     "date": "2016-04-05",
-    "projectUrl": "https://github.com/dstineback/budget-buddy",
+    "projectUrl": "http://stefuhnee.github.io/budget-buddy/budget.html",
     "body": "<p>Final group project for 201...more info to come.</p>",
-    "category": "great"
+    "category": "great",
+    "projectImg": "img/budget-buddy-picture.bmp"
 }, {
     "title": "Bus Mall",
     "developer": "Dan Stineback",
