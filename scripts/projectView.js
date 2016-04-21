@@ -31,7 +31,7 @@
     $('#rating-filter').on('change', function() {
       if ($(this).val()) {
         $('article').hide();
-        $('article[data-category="' + $(this).val() + '"]').fadeIn(300);
+        $('article[data-category="' + $(this).val() + '"]').fadeIn(500);
       } else {
         $('article').fadeIn(300);
         $('article.template').hide();
