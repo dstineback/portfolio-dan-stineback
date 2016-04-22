@@ -1,3 +1,13 @@
+select {
+  border-radius: 20px;
+  background-color: grey;
+  color: #fff;
+  text-align: center;
+  width: 50px;
+  margin-bottom: 25px;
+  
+}
+
 .site-header {
   background-color: #1EA9F2;
   position: relative;
@@ -21,26 +31,4 @@
   font-size: 1.5em;
   padding: .5em .2em;
   border-bottom: 1px solid #ccc;
-}
-
-@media only screen and (min-width: 768px) {
-  .icon-menu {
-    display: none;
-  }
-  .main-nav ul {
-    display: block;
-  }
-
-  .main-nav li {
-    display: inline;
-    border: none;
-    padding-right: 10px;
-
-  }
-  .maiv-nav li a {
-    text-decoration: none;
-
-
-  }
-
 }
