@@ -46,9 +46,9 @@
 }
 
 @media only screen and (min-width: 640px) {
-  .screen-shot {
+  .screen-shot img {
 
-    max-width: 100%
+    max-width: 80%;
   }
   .heading-group-h1 {
     padding: .1em .1em .1em 2em;
