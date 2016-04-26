@@ -21,7 +21,7 @@
   Project.fetchAll = function(callback){
     $.ajax({
       type: 'HEAD',
-      url: 'scripts/projectData.json',
+      url: 'scripts/data/projectData.json',
       success: function(data, message, xhr){
         var eTag = xhr.getResponseHeader('eTag');
         if (eTag === localStorage.eTag){
