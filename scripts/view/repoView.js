@@ -3,10 +3,10 @@
 
 
   var ui = function() {
-    var $about = $('#about');
+    var $admin = $('#admin');
 
-    $about.find('ul').empty();
-    $about.show().siblings().hide();
+    $admin.find('div').empty();
+    $admin.show().siblings().hide();
   };
 
   var render = Handlebars.compile($('#repo-template').text());
@@ -14,7 +14,7 @@
   repoView.index = function() {
     ui();
 
-    $('#about ul').append(
+    $('#admin div').append(
       repos.with('name').map(render)
     );
   };
