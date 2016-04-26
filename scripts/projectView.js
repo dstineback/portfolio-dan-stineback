@@ -2,26 +2,23 @@
 
   var projectView = {};
 
-  // projectView.handleMainNav = function() {
-  //   $('nav').on('click', '.tab', function(e) {
-  //     $('.tab-content').hide();
-  //     var $selectedTab = $(this).attr('data-content');
-  //     $('#' + $selectedTab).fadeIn(500);
-  //   });
-  //   $('nav .tab:nth-of-type(2)').click();
-  // };
-  projectView.populateFilters = function() {
-    $('div[data-category]').each(function() {
-      if(!$(this).hasClass('template')) {
-        var val = $(this).attr('data-category');
+  projectView.populateFilters = function()
+  {
+    $('article').each(function() {
+      if (!$(this).hasClass('template')) {
+        var val = $(this).find('title').text();
         var optionTag = '<option value="' + val + '">' + val + '</option>';
-        // $('#title-filter').append(optionTag);
+        $('#title-filter').append(optionTag);
+
+        val = $(this).attr('data-category');
+        optionTag = '<option value="' + val + '">' + val + '</option>';
         if ($('#title-filter option[value="' + val + '"]').length === 0) {
           $('#title-filter').append(optionTag);
         }
       }
     });
   };
+
 
   projectView.handleRatingFilter = function() {
     $('#title-filter').on('change', function() {
