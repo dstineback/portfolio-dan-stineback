@@ -3,7 +3,7 @@
 
   resumeController.index = function() {
     $('main > section').hide();
-    $('resume').show();
+    $('#resume').show();
   };
-  module.resumeController = resumeController
-}); (window);
+  module.resumeController = resumeController;
+}) (window);
