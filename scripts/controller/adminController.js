@@ -1,13 +1,9 @@
 (function(module) {
   var adminController = {};
 
-  // aboutController.index = function() {
-  //   $('main > section').hide();
-  //   $('#admin').show();
-  // };
-
   adminController.index = function() {
-    $('#admin').show().siblings().hide();
+    $('main > section').hide();
+    $('#admin').show()
 
     repos.requestRepos(repoView.index());
   };

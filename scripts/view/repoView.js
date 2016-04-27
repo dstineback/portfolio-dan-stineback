@@ -4,9 +4,9 @@
 
   var ui = function() {
     var $admin = $('#admin');
-
-    $admin.find('div').empty();
+    $admin.find('#hubData').empty();
     $admin.show().siblings().hide();
+
   };
 
   var render = Handlebars.compile($('#repo-template').text());
