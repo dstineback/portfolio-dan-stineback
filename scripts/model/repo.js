@@ -5,19 +5,19 @@
 
   repos.requestRepos = function(callback) {
 
-    $.ajax({
-      url: 'https://api.github.com/users/dstineback/repos' +
+    $.get('/github.com/users/dstineback/repos' +
       '?per_page=10' +
-      '&sort=updated',
-      type: 'GET',
-      headers: {'Authorization': 'token ' + githubToken},
-      success: function(data){
-        data.forEach(function(data){
-          repos.all.push(data);
-        });
-      }
-    });
-
+      '&sort=updated')
+      .done(function(data) {
+        repos.all = data;
+      })
+      // type: 'GET',
+      // headers: {'Authorization': 'token ' + githubToken},
+      // success: function(data){
+      //   data.forEach(function(data){
+      //     repos.all.push(data);
+      //   });
+      .done(callback);
   };
 
 

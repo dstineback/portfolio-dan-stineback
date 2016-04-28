@@ -1,0 +1,24 @@
+{
+  "name": "portfolio-dan-stineback",
+  "version": "1.0.0",
+  "description": "portfolio project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dstineback/portfolio-dan-stineback.git"
+  },
+  "author": "dstineback@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dstineback/portfolio-dan-stineback/issues"
+  },
+  "homepage": "https://github.com/dstineback/portfolio-dan-stineback#readme",
+  "dependencies": {
+    "express": "^4.13.4",
+    "express-request-proxy": "^2.0.0"
+  }
+}
