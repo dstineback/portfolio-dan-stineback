@@ -5,7 +5,7 @@
 
   repos.requestRepos = function(callback) {
 
-    $.get('/github.com/users/dstineback/repos' +
+    $.get('/github/users/dstineback/repos' +
       '?per_page=10' +
       '&sort=updated')
       .done(function(data) {
