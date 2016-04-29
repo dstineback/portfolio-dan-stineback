@@ -1,12 +1,10 @@
 (function(module){
 
-  Project.prototype.toMyPortfolio = function(){
-    var template = Handlebars.compile($('#projects-template').html());
-    this.daysAgo = parseInt((new Date() - new Date(this.date)) / 60 / 60 / 24 / 1000);
-    return template(this);
-  };
-
-
+  // Project.prototype.toMyPortfolio = function(){
+  //   var template = Handlebars.compile($('#projects-template').html());
+  //   this.daysAgo = parseInt((new Date() - new Date(this.date)) / 60 / 60 / 24 / 1000);
+  //   return template(this);
+  // };
   Project.all = [];
 
   Project.loadAll = function(dataFromJSON){
@@ -26,21 +24,18 @@
         var eTag = xhr.getResponseHeader('eTag');
         if (eTag === localStorage.eTag){
           Project.loadAll(JSON.parse(localStorage.stashedProjectData));
-          // projectView.initIndexPage();
           callback();
         } else {
-          $.getJSON('scripts/projectData.json', function(data){
+          $.getJSON('scripts/data/projectData.json', function(data){
             Project.loadAll(data);
             localStorage.stashedProjectData = JSON.stringify(data);
             localStorage.eTag = eTag;
-            // projectView.initIndexPage();
             callback();
           });
         }
       }
     });
   };
-
 
   module.Project = Project;
 })(window);
