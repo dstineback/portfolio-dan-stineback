@@ -1,0 +1,25 @@
+[{
+    "title": "Budget Buddy",
+    "developer": "Dan Stineback",
+    "date": "2016-04-05",
+    "projectUrl": "http://stefuhnee.github.io/budget-buddy/budget.html",
+    "body": "<p>Final group project for 201...more info to come.</p>",
+    "category": "great",
+    "projectImg": "img/budget-buddy-picture.bmp"
+}, {
+    "title": "Bus Mall",
+    "developer": "Dan Stineback",
+    "date": "2016-03-29",
+    "projectUrl": "https://github.com/dstineback/bus-mall/tree/friday",
+    "body": "<p>Class project for a bus app company...more info to come</p>",
+    "category": "okay",
+    "projectImg": "img/bus-mall-picture.bmp"
+}, {
+    "title": "About Me",
+    "developer": "Dan Stineback",
+    "date": "2016-03-16",
+    "projectUrl": "https://github.com/dstineback/about-me-1/tree/master",
+    "body": "<p>Class project about a pizza store...more info to come</p>",
+    "category": "rookie",
+    "projectImg": "img/pizza-project-picture.bmp"
+}]
